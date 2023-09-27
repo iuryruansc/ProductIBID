@@ -10,7 +10,7 @@ namespace ProductIBID
     {
         public static void AdicionarProduto(ApplicationDBContext context, string nome)
         {
-            var novoProduto = new Produto { Nome = "Produto 1" };
+            var novoProduto = new Produto { Nome = nome };
             context.Produtos.Add(novoProduto);
             context.SaveChanges();
         }
@@ -24,23 +24,25 @@ namespace ProductIBID
             }
         }
 
-        public static void EditarProduto(ApplicationDBContext context)
+        public static void EditarProduto(ApplicationDBContext context, int produtoID)
         {
-            var produtoParaEditar = context.Produtos.FirstOrDefault(p => p.ID == 1);
+            var produtoParaEditar = context.Produtos.FirstOrDefault(p => p.ID == produtoID);
             if (produtoParaEditar != null)
             {
                 Console.WriteLine("Digite o novo nome do produto:");
-                string novoNome = Console.ReadLine();
-                produtoParaEditar.Nome = novoNome;
+                string nomeAtualizado = Console.ReadLine();
+                produtoParaEditar.Nome = nomeAtualizado;
                 context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("ID inválido.");
             }
         }
 
-        public static void ExcluirProduto(ApplicationDBContext context)
+        public static void ExcluirProduto(ApplicationDBContext context, int produtoID)
         {
-            Console.WriteLine("Digite o ID do produto a ser removido:");
-            int idProdutoExcluido = int.Parse(Console.ReadLine());
-            var produtoParaExcluir = context.Produtos.FirstOrDefault(p => p.ID == idProdutoExcluido);
+            var produtoParaExcluir = context.Produtos.FirstOrDefault(p => p.ID == produtoID);
             if (produtoParaExcluir != null)
             {
                 context.Produtos.Remove(produtoParaExcluir);

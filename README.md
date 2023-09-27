@@ -5,6 +5,12 @@ Este projeto demonstra um aplicativo de gerenciamento de produtos que permite ad
 ## Requisitos
 - .Net 5.0 ou superior
 
+## Como Instalar o .NET
+1. Acesse o site e baixe uma versão compatível com o projeto: https://dotnet.microsoft.com/pt-br/download
+2. Para instalação no windows siga as instruções: https://learn.microsoft.com/pt-br/dotnet/core/install/windows
+3. Para instalação no linux siga as instruções: https://learn.microsoft.com/pt-br/dotnet/core/install/linux
+4. Abra o terminal e verifique se a instalação ocorreu normalmente: dotnet --version
+
 ## Como Executar
 1. Em seu terminal acesse o Diretório em que deseja clonar o repositório: cd diretorio;
 2. Clone este repositório em sua máquina local: git clone https://github.com/iuryruansc/ProductIBID.git;

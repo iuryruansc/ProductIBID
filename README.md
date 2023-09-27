@@ -6,7 +6,7 @@ Este projeto demonstra um aplicativo de gerenciamento de produtos que permite ad
 - .Net 5.0 ou superior
 
 ## Como Executar
-1. Acesse o Diretório em que deseja clonar o repositório: cd diretorio;
+1. Em seu terminal acesse o Diretório em que deseja clonar o repositório: cd diretorio;
 2. Clone este repositório em sua máquina local: git clone https://github.com/iuryruansc/ProductIBID.git;
 3. Acesse a pasta recém criada: cd ProjectIBID;
 4. Compile o projeto usando .NET CLI com o comando: dotnet build;

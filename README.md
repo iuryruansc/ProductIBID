@@ -3,7 +3,7 @@
 Este projeto demonstra um aplicativo de gerenciamento de produtos que permite adicionar, listar, editar e excluir produtos em um banco de dados em memória.
 
 ## Requisitos
-- .Net 7.0 ou superior
+- .Net 6.0 ou superior
 
 ## Como Instalar o .NET
 1. Acesse o site e baixe uma versão compatível com o projeto: https://dotnet.microsoft.com/pt-br/download
